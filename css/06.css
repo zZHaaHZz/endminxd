@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap');
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  z-index: 1000;
+  width: 383px;
+  height: 540px;
+}
+
+.popup.show {
+  display: block;
+}
+
+.container-employee{
+    height: 1024px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition: filter 0.3s ease; 
+}
+.center-main-content-emloyee{
+    padding: 20px;
+    width: 1080px;
+    height: 872px;
+}
+.ult-main{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.add-fillter{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.btn-add-emloyee{
+    width: 221px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: #7152F3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.btn-add-emloyee i{
+    font-size: 20px;
+    color: #FFF;
+}
+.btn-add-emloyee p{
+    font-size: 15px;
+    color: #FFF;
+}
+.fillter{
+    width: 117px;
+    height: 50px;
+    border: 1px solid #A2A1A833;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    gap: 5px;
+    border-radius: 10px;
+}
+/* table */
+.td-name img{
+    width: 36px; 
+    height: 36px; 
+    border-radius: 50%;
+}
+.td-name{
+    width: 100%;
+    height: 50px;
+}
+.table-emloyee{
+    width: 100%;
+    margin-top: 30px;
+}
+.th-head{
+    padding: 20px 0px;
+    color: #A2A1A8;
+    font-size: 16px;
+}
+.th-name{
+    width: 252px;
+}
+.th-id{
+    width: 132px;
+}
+.th-depart{
+    width: 172px;
+}
+.th-des{
+    width: 162px;
+}
+.th-type{
+    width: 112px;
+}
+.th-status{
+    width: 110px;
+}
+.th-acction{
+    width: 100px;
+}
+.td-name{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+.box-td-stt-permanent{
+    width: 80px;
+    height: 25px;
+    background-color: #7152F31A;
+    font-size: 12px;
+    color: #7152F3;
+    padding: auto;
+    border-radius: 5px;
+    padding: 5px 7px;
+}
+.td-body{
+    height: 55px;
+    padding-top: 5px;
+}
+/* Phan trang */
+.pagination{
+    width: 1040px;
+    height: 46px;
+    margin-top: 14px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-pagination{
+    width: 153px;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.left-pagination p{
+    color: #A2A1A8;
+}
+.box-showing p{
+    color: #000000;
+}
+.box-showing{
+    width: 76px;
+    height: 46px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid #A2A1A833;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #000;
+}
+.center-pagination{
+    color: #A2A1A8;
+}
+.right-pagination{
+    width: 215px;
+    height: 36px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.so-trang{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.doi-trang{
+    width: 24px;
+    height: 24px;
+    padding: 2px 6px;
+}
+.box-trang{
+    width: 36px;
+    height: 36px;
+    padding: 8px 10px;
+    font-size: 14px;
+}
+.box-trang-active{
+    width: 36px;
+    height: 36px;
+    padding: 8px 14px;
+    font-size: 14px;
+    border: 1px solid #7152F3;
+    border-radius: 8px;
+    color: #7152F3;
+}

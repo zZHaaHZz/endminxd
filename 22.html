@@ -1,0 +1,105 @@
+<style>
+    .content-payroll {
+        width: 1080px;
+        height: 872px;
+        border-radius: 10px;
+        border: 1px solid #A2A1A833;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .search22 {
+        margin-right: 500px;
+    }
+
+    .next22 {
+        width: 150px;
+    }
+    .head-tbl-payroll{
+        width: 1040px;
+        height: 44px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 16px;
+        color: #A2A1A8;
+    }
+
+    .head-tbl-payroll .name{
+        width: 308px;
+    }
+    .head-tbl-payroll .ctc{
+        width: 258px;
+    }
+    .head-tbl-payroll .luong-thang{
+        width: 182px;
+    }
+    .head-tbl-payroll .deduction{
+        width: 192px;
+    }
+    .head-tbl-payroll .status-payroll{
+        width: 100px;
+    }
+
+    .pay-employee{
+        width: 1040px;
+        height: 44px;
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+    }
+    .pay-employee .name-payroll{
+        width: 308px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 6px;
+    }
+    .pay-employee .name-payroll img{
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+    }
+    .pay-employee .pay-ctc{
+        width: 258px;
+    }
+    .pay-employee .pay-thang{
+        width: 182px;
+    }
+    .pay-employee .pay-deduction{
+        width: 192px;
+    }
+    .pay-employee .pay-status{
+        width: 100px;
+    }
+</style>
+<div class="content-payroll">
+    <div class="search search22">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search">
+    </div>
+    <button class="btn-can-next next next22">Export</button>
+    <div class="tbl-payroll">
+        <div class="head-tbl-payroll">
+            <p class="name">Employee Name</p>
+            <p class="ctc">CTC</p>
+            <p class="luong-thang">Salary Per Month</p>
+            <p class="deduction">Deduction</p>
+            <p class="status-payroll">Status</p>
+        </div>
+        <div id="list-pay"></div>
+        <!-- <div class="pay-employee">
+            <div class="name-payroll">
+                <img src="/img/avatar.jpg" alt="">
+                <p class="name">Bui quang ha</p>
+            </div>
+            <p class="pay-ctc">$45000</p>
+            <p class="pay-thang">$4000</p>
+            <p class="pay-deduction">$450</p>
+            <p class="pay-status">Compieted</p>
+        </div> -->
+    </div>
+</div>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>HRMS</title>
+    <link rel="stylesheet" href="css/05.css">
+    <link rel="stylesheet" href="css/06.css">
+    <link rel="stylesheet" href="css/07.css">
+    <link rel="stylesheet" href="css/08.css">
+    <link rel="stylesheet" href="css/09.css">
+    <link rel="stylesheet" href="css/19.css">
+    <link rel="stylesheet" href="css/21.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/siderbar.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="index-container">
+        <div id="siderbar"></div>
+        <div class="main-content-hrms">
+            <div id="header"></div>
+            <div id="content-hrms"></div>
+        </div>
+    </div>
+</body>
+<div class="popup" id="popup">
+    <h3>Bộ lọc</h3>
+    <div class="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search">
+    </div>
+
+    <div class="top-popup">
+        <div class="title-top-popup">Department</div>
+        <div class="select-box-popup">
+            <div class="left-select-box-popup">
+                <label for=""><input type="checkbox">Design</label>
+                <label for=""><input type="checkbox">Design</label>
+                <label for=""><input type="checkbox">Design</label>
+                <label for=""><input type="checkbox">Design</label>
+                <label for=""><input type="checkbox">Design</label>
+            </div>
+            <div class="right-select-box-popup">
+                <label for=""><input type="checkbox">Design</label>
+                <label for=""><input type="checkbox">Design</label>
+                <label for=""><input type="checkbox">Design</label>
+                <label for=""><input type="checkbox">Design</label>
+                <label for=""><input type="checkbox">Design</label> 
+            </div>
+        </div>
+    </div>
+    <div class="bot-popup">
+        <div class="title-bot-popup">Select Type</div>
+        <div class="radia-popup">
+            <label for=""><input type="radio">Design</label>
+            <label for=""><input type="radio">Design</label>
+        </div>
+    </div>
+
+    <button id="closePopup">Cancel</button>
+    <button id="applyPopup">Apply</button>
+</div>
+<script src="js/loadpage.js"></script>
+<script src="js/employee.js"></script>
+<script src="js/add-employee.js"></script>
+<script src="js/alldepartments.js"></script>
+<script src="js/payroll.js"></script>
+
+</html>

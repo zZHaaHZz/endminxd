@@ -1,0 +1,79 @@
+<div class="main-content-emloyee">
+
+    <div class="center-main-content-emloyee">
+        <div class="ult-main">
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="add-fillter">
+                <button class="btn-add-emloyee">
+                    <i class="fa-solid fa-circle-plus"></i>
+                    <p>Add New Employee</p>
+                </button>
+
+                <div class="fillter"><i class="fa-solid fa-filter"></i>Filter</div>
+            </div>
+        </div>
+
+        <table class="table-emloyee" style="border-top: 1px solid #A2A1A833; border-radius: 20px;">
+            <thead>
+                <tr>
+                    <td class="th-head th-name">Employee Name</td>
+                    <td class="th-head th-id">Employee ID</td>
+                    <td class="th-head th-depart">Department</td>
+                    <td class="th-head th-des">Designation</td>
+                    <td class="th-head th-type">Type</td>
+                    <td class="th-head th-status">Status</td>
+                    <td class="th-head th-acction">Action</td>
+                </tr>
+            </thead>
+            <tbody id="employee-body">
+            </tbody>
+        </table>
+        <script>
+            const tbody = document.getElementById("employee-body");
+
+            for (let i = 1; i <= 12; i++) {
+                tbody.innerHTML += `
+                        <tr class="td-body">
+                            <td class="td-tbl-emp td-name"><img src="img/avatar.jpg" alt=""><p>Bùi Quang Hà ${i}</p></td>
+                            <td class="td-tbl-emp td-id">${345321000 + i}</td>
+                            <td class="td-tbl-emp td-depart">Development</td>
+                            <td class="td-tbl-emp td-des">JS Developer</td>
+                            <td class="td-tbl-emp td-type">Office</td>
+                            <td class="td-tbl-emp td-status">
+                                <div class="box-td-stt-permanent">Permanent</div>
+                            </td>
+                            <td class="td-tbl-emp td-acction">
+                                <i class="fa-solid fa-eye"></i>
+                                <i class="fa-solid fa-pen"></i>
+                                <i class="fa-solid fa-trash"></i>
+                            </td>
+                        </tr>
+                    `;
+            }
+        </script>
+        <div class="pagination">
+            <div class="left-pagination">
+                <p>Showing</p>
+                <div class="box-showing">
+                    <p>10</p>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+            </div>
+            <div class="center-pagination">Showing 1 to 10 out of 60 records</div>
+            <div class="right-pagination">
+                <div class="doi-trang"><i class="fa-solid fa-angle-left"></i></div>
+                <div class="so-trang">
+                    <div class="box-trang box-trang-active">1</div>
+                    <div class="box-trang">2</div>
+                    <div class="box-trang">3</div>
+                    <div class="box-trang">4</div>
+                </div>
+                <div class="doi-trang"><i class="fa-solid fa-angle-right"></i></div>
+            </div>
+        </div>
+    </div>
+</div>
+</html>

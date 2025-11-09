@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Lexend', sans-serif;
+}
+
+body {
+    width: 1440px;
+    margin: 0 auto;
+    /* căn giữa ngang */
+}
+
+
+.index-container {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+}
+
+.main-content-hrms {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
+
+.center-main-content-add-employee {
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+/* Popup luôn nổi trên */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.popup.show {
+    display: block;
+}
+
+/* Blur chỉ cho phần main content (header + content) */
+.blur-main {
+    filter: blur(6px);
+    transition: filter 0.3s;
+}
+
+#closePopup {
+    width: 166px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: aliceblue;
+    color: black;
+}
+
+#applyPopup {
+    width: 166px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: #7152F3;
+    color: rgb(255, 255, 255);
+}
+
+.popup .search {
+    margin-top: 40px;
+}
+.top-popup{
+    width: 343px;
+    height: 200px;
+    margin-top: 20px;
+    border: 1px solid black;
+}
+.bot-popup{
+    width: 343px;
+    height: 64px;
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-bottom: 30px ;
+}
+.select-box-popup{
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+}
+.left-select-box-popup{
+    width: 160px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+}
+.right-select-box-popup{
+    width: 102px;
+    height: 160px;
+      display: flex;
+    flex-direction: column;
+}
