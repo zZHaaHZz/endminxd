@@ -59,6 +59,8 @@ function initEmployeePage() {
       // const id = e.target.dataset.id; // có thể truyền id vào trang 12 nếu cần
       // console.log("👁 Xem thông tin nhân viên ID:", id);
       // loadPage("./show-employee/12.html");
+      alert("Chuc nang dang phat trien");
+      loadPage("./06.html");
     });
   });
 }
