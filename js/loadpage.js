@@ -34,7 +34,7 @@ async function loadPage(file) {
     if (file.includes("20.html") && typeof initAllDepartmentsPage === "function") setTimeout(initAllDepartmentsPage, 50);
     if (file.includes("21.html") && typeof initAllDepartmentsPage === "function");
     if (file.includes("22.html") && typeof addpayroll === "function") setTimeout(addpayroll, 50);
-   } catch (err) {
+  } catch (err) {
     content.innerHTML = `<p style="color:red;padding:20px;">${err.message}</p>`;
   }
 }
@@ -57,13 +57,49 @@ function initSidebarEvents() {
     if (!a) return;
     e.preventDefault();
 
+    const href = a.getAttribute("href");
+
+    // --- Xử lý riêng cho /23 ---
+    if (href === "/23") {
+      alert("Chức năng đang phát triển");
+      sidebar.querySelectorAll("li").forEach(li => li.classList.remove("siderbar-active"));
+      a.closest("li")?.classList.add("siderbar-active");
+      return; // không load page
+    }
+    if (href === "/25") {
+      alert("Chức năng đang phát triển");
+      sidebar.querySelectorAll("li").forEach(li => li.classList.remove("siderbar-active"));
+      a.closest("li")?.classList.add("siderbar-active");
+      return; // không load page
+    }
+    if (href === "/30") {
+      alert("Chức năng đang phát triển");
+      sidebar.querySelectorAll("li").forEach(li => li.classList.remove("siderbar-active"));
+      a.closest("li")?.classList.add("siderbar-active");
+      return; // không load page
+    }
+    if (href === "/26") {
+      alert("Chức năng đang phát triển");
+      sidebar.querySelectorAll("li").forEach(li => li.classList.remove("siderbar-active"));
+      a.closest("li")?.classList.add("siderbar-active");
+      return; // không load page
+    }
+    if (href === "/28") {
+      alert("Chức năng đang phát triển");
+      sidebar.querySelectorAll("li").forEach(li => li.classList.remove("siderbar-active"));
+      a.closest("li")?.classList.add("siderbar-active");
+      return; // không load page
+    }
+
+    // Xử lý các link khác
     sidebar.querySelectorAll("li").forEach(li => li.classList.remove("siderbar-active"));
     a.closest("li")?.classList.add("siderbar-active");
 
-    const path = a.getAttribute("href").replace("/", "");
+    const path = href.replace("/", "");
     loadPage(`./${path}.html`);
   });
 }
+
 
 function initDepartmentPage() {
   console.log("Page 19 loaded ✅");
