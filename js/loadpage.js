@@ -34,7 +34,7 @@ async function loadPage(file) {
     if (file.includes("20.html") && typeof initAllDepartmentsPage === "function") setTimeout(initAllDepartmentsPage, 50);
     if (file.includes("21.html") && typeof initAllDepartmentsPage === "function");
     if (file.includes("22.html") && typeof addpayroll === "function") setTimeout(addpayroll, 50);
-  } catch (err) {
+   } catch (err) {
     content.innerHTML = `<p style="color:red;padding:20px;">${err.message}</p>`;
   }
 }
