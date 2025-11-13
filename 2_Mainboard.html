@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/02_Mainboard.css">
+    <link rel="stylesheet" href="css/pages/dashboard.css">
+    <link rel="stylesheet" href="css/pages/employees.css">
+    <link rel="stylesheet" href="designs/colors.css">
+    <link rel="stylesheet" href="designs/buttons.css">
+    <link rel="stylesheet" href="designs/inputs.css">
+    <link rel="stylesheet" href="designs/typography.css">
+</head>
+
+<body>
+    <div class="main-page">
+        <div class="sidebar">
+            <div class="logo-menu">
+                <img style="width: 123.06px; height: 50px; user-select: none;" src="asset/logo/Logo + Text.svg" alt="">
+
+                <div class="menu">
+                    <div class="menu-button-on">
+                        <img class="icon" src="asset/icon/menu-dashboard.svg"
+                            data-icon-active="asset/icon/active/menu-dashboard-on.svg" alt="">
+                        <p class="body1-regular">Dashboard</p>
+                    </div>
+
+                    <div class="menu-button-off">
+                        <img class="icon" src="asset/icon/menu-all_employees.svg"
+                            data-icon-active="asset/icon/active/menu-all_employees-on.svg" alt="">
+                        <p class="body1-regular">All Employees</p>
+                    </div>
+
+                    <div class="menu-button-off">
+                        <img class="icon" src="asset/icon/menu-all_departments.svg"
+                            data-icon-active="asset/icon/active/menu-all_departments-on.svg" alt="">
+                        <p class="body1-regular">All Departments</p>
+                    </div>
+
+                    <div class="menu-button-off">
+                        <img class="icon" src="asset/icon/menu-attendance.svg"
+                            data-icon-active="asset/icon/active/menu-attendance-on.svg" alt="">
+                        <p class="body1-regular">Attendance</p>
+                    </div>
+
+                    <div class="menu-button-off">
+                        <img class="icon" src="asset/icon/menu-payroll.svg"
+                            data-icon-active="asset/icon/active/menu-payroll-on.svg" alt="">
+                        <p class="body1-regular">Payroll</p>
+                    </div>
+
+                    <div class="menu-button-off">
+                        <img class="icon" src="asset/icon/menu-jobs.svg"
+                            data-icon-active="asset/icon/active/menu-jobs-on.svg" alt="">
+                        <p class="body1-regular">Jobs</p>
+                    </div>
+
+                    <div class="menu-button-off">
+                        <img class="icon" src="asset/icon/menu-candidates.svg"
+                            data-icon-active="asset/icon/active/menu-candidates-on.svg" alt="">
+                        <p class="body1-regular">Candidates</p>
+                    </div>
+
+                    <div class="menu-button-off">
+                        <img class="icon" src="asset/icon/menu-leaves.svg"
+                            data-icon-active="asset/icon/active/menu-leaves-on.svg" alt="">
+                        <p class="body1-regular">Leaves</p>
+                    </div>
+
+                    <div class="menu-button-off">
+                        <img class="icon" src="asset/icon/menu-holidays.svg" 
+                            data-icon-active="asset/icon/active/menu-holidays-on.svg" alt="">
+                        <p class="body1-regular">Holidays</p>
+                    </div>
+
+                    <div class="menu-button-off">
+                        <img class="icon" src="asset/icon/menu-setting.svg"
+                            data-icon-active="asset/icon/active/menu-setting-on.svg" alt="">
+                        <p class="body1-regular">Settings</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mode">
+                <button class="btn-mode on">
+                    <img src="asset/icon/sun.svg" alt="">
+                    <p style="color: var(--white-500)" class="body1-regular">Light</p>
+                </button>
+                <button class="btn-mode off">
+                    <img src="asset/icon/half moon.svg" alt="">
+                    <p class="body1-regular">Dark</p>
+                </button>
+            </div>
+        </div>
+
+        <div class="main-page-right">
+            <div class="topbar">
+                <div class="topbar-left">
+                    <p class="h6" id="topbar-left-main-title"></p>
+                    <div class="topbar-left-breadcrumb" id="breadcrumb">
+                        <!-- <p class="body2-regular">All Employees</p>
+                        <img class="icon" src="asset/icon/direction-right.svg" alt="">
+                        <p class="body2-regular">Brooklyn Simmons</p> -->
+                    </div>
+                </div>
+
+                <div class="topbar-right">
+                    <div class="search-container">
+                        <img class="icon" src="asset/icon/search.svg" alt="">
+                        <input class="body1-regular" type="text" placeholder="Search">
+                    </div>
+
+                    <div class="btn-noti">
+                        <img src="asset/icon/notification.svg" alt="">
+                    </div>
+
+                    <div class="my-profile">
+                        <div class="my-profile-left">
+                            <img src="asset/avatar/robert.png" alt="">
+                            <div>
+                                <p class="body1">Robert Allen</p>
+                                <p style="color: var(--gray-500)" class="caption-regular">HR Manager</p>
+                            </div>
+                        </div>
+                        <img style="height: 20px; width: 20px;" src="asset/icon/direction-down-small.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-container" id="content"></div>
+        </div>
+    </div>
+    <script src="js/main/employees.js"></script>
+
+    <script src="js/main/menu.js"></script>
+</body>
+
+</html>

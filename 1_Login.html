@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRMS - Đăng nhập</title>
+    <link rel="stylesheet" href="css/01_Login.css">
+    <link rel="stylesheet" href="designs/colors.css">
+    <link rel="stylesheet" href="designs/buttons.css">
+    <link rel="stylesheet" href="designs/inputs.css">
+    <link rel="stylesheet" href="designs/typography.css">
+</head>
+
+<body>
+    <div class="page">
+
+        <img class="img-left" src="asset/Login-left-2.png" alt="">
+
+        <div class="page-right">
+            <!-- change password -->
+            <div class="page-right-content page-transition" id="page-change-password" style="display: none;">
+                <div class="back-button" id="btn-back-to-page-otp">
+                    <img src="asset/icon/arrow-left.png" alt="">
+                    <p class="body1-regular dark-500">Back</p>
+                </div>
+                <div class="welcome-group">
+                    <p class="h4">Enter New Password</p>
+                    <p style="color: var(--gray-500)" class="body1-regular">
+                        Enter your new password.
+                    </p>
+                </div>
+
+                <div class="login-container">
+                    <div class="login-container-input">
+                        <div class="login-textboxes">
+                            <div class="textbox-icon">
+                                <div class="input-group">
+                                    <p class="label-regular">New Password</p>
+                                    <input class="body1-regular" id="input-new-password" type="password">
+                                </div>
+                                <img class="icon toggle-show-password" src="asset/icon/eye-disable.svg" alt=""
+                                    id="toggle-new-password">
+                            </div>
+
+                            <div class="textbox-icon">
+                                <div class="input-group">
+                                    <p class="label-regular">Confirm New Password</p>
+                                    <input class="body1-regular" id="input-confirm-new-password" type="password">
+                                </div>
+                                <img class="icon toggle-show-password" src="asset/icon/eye-disable.svg" alt=""
+                                    id="toggle-new-password-confirm">
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn-giant body1-regular" id="btn-change-password">Change Password</button>
+                </div>
+            </div>
+
+            <!-- otp (NONE) -->
+            <div class="page-right-content page-transition" id="page-otp" style="display: none;">
+                <div class=" back-button" id="btn-back-to-page-forgot-password">
+                    <img src="asset/icon/arrow-left.png" alt="">
+                    <p class="body1-regular dark-500">Back</p>
+                </div>
+                <div class="welcome-group">
+                    <p class="h4">Enter OTP</p>
+                    <p style="color: var(--gray-500)" class="body1-regular" id="nofi-send-otp-to-email">
+                        We have share a code of your registered email address
+                        robertallen@example.com
+                    </p>
+                </div>
+
+                <div class="login-container">
+                    <div class="otp-group">
+                        <div class="otp-input">
+                            <input class="h5 dark-500" type="text" maxlength="1">
+                            <input class="h5 dark-500" type="text" maxlength="1">
+                            <input class="h5 dark-500" type="text" maxlength="1">
+                            <input class="h5 dark-500" type="text" maxlength="1">
+                            <input class="h5 dark-500" type="text" maxlength="1">
+                            <input class="h5 dark-500" type="text" maxlength="1">
+                        </div>
+                    </div>
+
+                    <button class="btn-giant body1-regular" id="btn-verify-otp">Verify</button>
+                </div>
+            </div>
+
+            <!-- forgot password (NONE)-->
+            <div class="page-right-content page-transition" id="page-forgot-password" style="display: none;">
+                <div class="back-button" id="btn-back-to-login">
+                    <img src="asset/icon/arrow-left.png" alt="">
+                    <p class="body1-regular dark-500">Back</p>
+                </div>
+                <div class="welcome-group">
+                    <p class="h4">Forgot Password</p>
+                    <p style="color: var(--gray-500)" class="body1-regular">
+                        Enter your registered email address. we’ll send you a code to reset your password.
+                    </p>
+                </div>
+
+                <div class="login-container">
+                    <div class="login-container-input">
+                        <div class="login-textboxes">
+                            <div class="textbox-icon">
+                                <div class="input-group">
+                                    <p class="label-regular">Email Address</p>
+                                    <input class="body1-regular" id="input-email-send-otp" type="email">
+                                </div>
+                                <!-- <img class="icon" src="asset/icon/🔽 Icon.png" alt=""> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn-giant body1-regular" id="btn-send-otp">Send OTP</button>
+                </div>
+            </div>
+
+            <!-- login (NONE)-->
+            <div class="page-right-login page-transition" id="page-login">
+
+                <div class="logo-text">
+                    <img src="asset/logo/HRMS logo_text.png" alt="">
+                </div>
+
+                <div class="page-right-content">
+                    <div class="welcome-group">
+                        <p class="h4">Welcome 👋</p>
+                        <p style="color: var(--gray-500)" class="body1-regular">
+                            Please login here
+                        </p>
+                    </div>
+
+                    <div class="login-container">
+                        <div class="login-container-input">
+                            <div class="login-textboxes">
+                                <div class="textbox-icon">
+                                    <div class="input-group">
+                                        <p class="label-regular">Email Address</p>
+                                        <input class="body1-regular" type="email" id="input-email-login">
+                                    </div>
+                                    <!-- <img class="icon" src="asset/icon/🔽 Icon.png" alt=""> -->
+                                </div>
+
+                                <div class="textbox-icon">
+                                    <div class="input-group">
+                                        <p class="label-regular">Password</p>
+                                        <input class="body1-regular" type="password" id="input-password-login">
+                                    </div>
+                                    <img class="icon toggle-show-password" src="asset/icon/eye-disable.svg" alt=""
+                                        id="toggle-password-login">
+                                </div>
+                            </div>
+
+                            <div class="forgot-pass-group">
+                                <div class="remember-me-group">
+                                    <input id="remember-me-checkbox" type="checkbox">
+                                    <!-- <img src="asset/icon/State.png" alt=""> -->
+                                    <p class="body1-regular">Remember Me</p>
+                                </div>
+
+                                <p id="goto-page-forgot-password" style="color: var(--primary-500)"
+                                    class="body2-regular">
+                                    Forgot Password?
+                                </p>
+                            </div>
+                        </div>
+
+                        <button class="btn-giant body1-regular" id="btn-login">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="overlay" id="popup-change-password-success" style="display: none;">
+            <div class="popup-change-password-ok">
+                <p class="welcome-back-fabiana">🎉</p>
+                <div style="display: flex; flex-direction: column; gap: 5px;">
+                    <p class="h4">Password Update Successfully</p>
+                    <p style="color: var(--gray-500)" class="body1-regular">Your password has been update successfully
+                    </p>
+                </div>
+                <button class="btn-giant body1-regular" id="btn-popup-back-to-login">Back to Login</button>
+            </div>
+        </div>
+
+        <script src="js/login/login.js"></script>
+</body>
+
+</html>

@@ -88,3 +88,11 @@ function initDepartmentPage() {
     });
   });
 }
+
+if(localStorage.getItem('router') === 'dashboard'){
+  window.location.href = '../05.html'
+}
+
+if(localStorage.getItem('router') === 'allEmployee'){
+  window.location.href = '../06.html'
+}

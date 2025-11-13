@@ -17,6 +17,7 @@ function initAllDepartmentsPage() {
           <div class="box-td-stt-permanent">Permanent</div>
         </td>
         <td class="td-tbl-emp td-acction">
+        
           <i class="fa-solid fa-eye"></i>
           <i class="fa-solid fa-pen"></i>
           <i class="fa-solid fa-trash"></i>

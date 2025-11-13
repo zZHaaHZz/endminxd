@@ -1,0 +1,42 @@
+p {
+    margin: 0px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+.textbox-icon {
+    display: inline-flex;
+    align-items: center;
+
+    width: calc(100% - 32px);
+    gap: 10px;
+    padding: 7px 16px;
+
+    outline: 1px solid var(--primary-500);
+    border-radius: 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1px;
+    width: 100%;
+    height: fit-content;
+}
+
+.input-group p {
+    color: var(--primary-500);
+    margin: 0px;
+}
+
+.input-group input {
+    border: none;
+}
+
+.input-group input:focus {
+    outline: none;
+}

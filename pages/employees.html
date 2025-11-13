@@ -1,0 +1,615 @@
+<div class="profile-container-top">
+    <div class="avatar-group">
+        <img id="avatar-img" src="asset/avatar/brooklyn.png" alt="">
+        <div class="avatar-group-right">
+            <p class="h5">Brooklyn Simmons</p>
+            <div class="short-info">
+                <div>
+                    <img src="asset/icon/menu-jobs.svg" alt="">
+                    <p class="body1-regular">Project Manager</p>
+                </div>
+
+                <div>
+                    <img src="asset/icon/gmail.svg">
+                    <p class="body1-regular">brooklyn.s@example.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="btn-edit-profile">
+        <img class="icon" src="asset/icon/edit.svg" alt="">
+        <p class="body1-regular">Edit Profile</p>
+    </button>
+</div>
+
+<div class="profile-container-bottom">
+    <!-- Side options (Profile) -->
+    <div class="side-options">
+        <button id="profile-option" class="side-options-on">
+            <img class="icon" src="asset/icon/user.svg" data-icon-active="asset/icon/active/user-on-white.svg" alt="">
+            <p class="body1">Profile</p>
+        </button>
+
+        <button class="side-options-off">
+            <img class="icon" src="asset/icon/calendar-check.svg"
+                data-icon-active="asset/icon/active/calendar-check-on-white.svg" alt="">
+            <p class="body1-regular">Attendance</p>
+        </button>
+
+        <button class="side-options-off">
+            <img class="icon" src="asset/icon/file 01.svg" data-icon-active="asset/icon/active/file 01-on-white.svg"
+                alt="">
+            <p class="body1-regular">Projects</p>
+        </button>
+
+        <button id="leave-option" class="side-options-off">
+            <img class="icon" src="asset/icon/notepad.svg" data-icon-active="asset/icon/active/notepad-on.svg" alt="">
+            <p class="body1-regular">Leave</p>
+        </button>
+    </div>
+
+    <!-- Profile - Details -->
+    <div class="persona-info profile-details" id="profile-details" style="display: none;">
+        <div class="persona-info-tabbar">
+            <div class="persona-info-tabbar-on">
+                <img class="icon" src="asset/icon/user.svg" data-icon-active="asset/icon/active/user-on-purple.svg"
+                    alt="">
+                <p class="body1">Personal Information</p>
+            </div>
+
+            <div class="persona-info-tabbar-off">
+                <img class="icon" src="asset/icon/briefcase.svg" data-icon-active="asset/icon/active/briefcase-on.svg"
+                    alt="">
+                <p class="body1-regular">Professional Information</p>
+            </div>
+
+            <div class="persona-info-tabbar-off">
+                <img class="icon" src="asset/icon/document-text.svg"
+                    data-icon-active="asset/icon/active/document-text-on.svg" alt="">
+                <p class="body1-regular">Documents</p>
+            </div>
+
+            <div class="persona-info-tabbar-off">
+                <img class="icon" src="asset/icon/lock.svg" data-icon-active="asset/icon/active/lock-on.svg" alt="">
+                <p class="body1-regular">Account Access</p>
+            </div>
+        </div>
+
+        <!-- Personal Information -->
+        <div class="personal-info-details" id="persona-info" style="display: none;">
+            <!-- row 1 -->
+            <div class="personal-info-details-row">
+                <div>
+                    <p class="body2-regular small-title">First Name</p>
+                    <p class="body1-regular">Brooklyn</p>
+                </div>
+
+                <div>
+                    <p class="body2-regular small-title">Last Name</p>
+                    <p class="body1-regular">Simmons</p>
+                </div>
+            </div>
+            <!-- row 2 -->
+            <div class="personal-info-details-row">
+                <div>
+                    <p class="body2-regular small-title">Mobile Number</p>
+                    <p class="body1-regular">(702) 555-0122</p>
+                </div>
+
+                <div>
+                    <p class="body2-regular small-title">Email Address</p>
+                    <p class="body1-regular">brooklyn.s@example.com</p>
+                </div>
+            </div>
+            <!-- row 3 -->
+            <div class="personal-info-details-row">
+                <div>
+                    <p class="body2-regular small-title">Date of Birth</p>
+                    <p class="body1-regular">July 14, 1995</p>
+                </div>
+
+                <div>
+                    <p class="body2-regular small-title">Marital Status</p>
+                    <p class="body1-regular">Married</p>
+                </div>
+            </div>
+            <!-- row 4 -->
+            <div class="personal-info-details-row">
+                <div>
+                    <p class="body2-regular small-title">Gender</p>
+                    <p class="body1-regular">Female</p>
+                </div>
+
+                <div>
+                    <p class="body2-regular small-title">Nationality</p>
+                    <p class="body1-regular">America</p>
+                </div>
+            </div>
+            <!-- row 5 -->
+            <div class="personal-info-details-row">
+                <div>
+                    <p class="body2-regular small-title">Address</p>
+                    <p class="body1-regular">2464 Royal Ln. Mesa, New Jersey</p>
+                </div>
+
+                <div>
+                    <p class="body2-regular small-title">City</p>
+                    <p class="body1-regular">California</p>
+                </div>
+            </div>
+            <!-- row 6 -->
+            <div class="personal-info-details-row">
+                <div style="padding-bottom: 0px; border-bottom: none;">
+                    <p class="body2-regular small-title">State</p>
+                    <p class="body1-regular">United State</p>
+                </div>
+
+                <div style="padding-bottom: 0px; border-bottom: none;">
+                    <p class="body2-regular small-title">Zip Code</p>
+                    <p class="body1-regular">35624</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Professional Information (NONE)-->
+        <div class="personal-info-details" id="professional-info" style="display: none;">
+            <!-- row 1 -->
+            <div class="personal-info-details-row">
+                <div>
+                    <p class="body2-regular small-title">Employee ID</p>
+                    <p class="body1-regular">879912390</p>
+                </div>
+
+                <div>
+                    <p class="body2-regular small-title">User Name</p>
+                    <p class="body1-regular">brooklyn_simmons</p>
+                </div>
+            </div>
+            <!-- row 2 -->
+            <div class="personal-info-details-row">
+                <div>
+                    <p class="body2-regular small-title">Employee Type</p>
+                    <p class="body1-regular">Office</p>
+                </div>
+
+                <div>
+                    <p class="body2-regular small-title">Email Address</p>
+                    <p class="body1-regular">brooklyn.s@example.com</p>
+                </div>
+            </div>
+            <!-- row 3 -->
+            <div class="personal-info-details-row">
+                <div>
+                    <p class="body2-regular small-title">Department</p>
+                    <p class="body1-regular">Project Manager</p>
+                </div>
+
+                <div>
+                    <p class="body2-regular small-title">Designation</p>
+                    <p class="body1-regular">Project Manager</p>
+                </div>
+            </div>
+            <!-- row 4 -->
+            <div class="personal-info-details-row">
+                <div>
+                    <p class="body2-regular small-title">Working Days</p>
+                    <p class="body1-regular">5 Days</p>
+                </div>
+
+                <div>
+                    <p class="body2-regular small-title">Joining Date</p>
+                    <p class="body1-regular">July 10, 2022</p>
+                </div>
+            </div>
+            <!-- row 5 -->
+            <div class="personal-info-details-row">
+                <div style="padding-bottom: 0px; border-bottom: none;">
+                    <p class="body2-regular small-title">Office Location</p>
+                    <p class="body1-regular">2464 Royal Ln. Mesa, New Jersey</p>
+                </div>
+
+                <div style="display: none;">
+                    <p class="body2-regular small-title">City</p>
+                    <p class="body1-regular">California</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Documents (NONE)-->
+        <div class="personal-info-details" id="documents" style="display: none;">
+            <!-- row 1 -->
+            <div class="documents-details-row">
+                <div class="documents-details-box">
+                    <p class="body1-regular">Appointment Letter.pdf</p>
+                    <div>
+                        <img class="icon" src="asset/icon/eye.svg" alt="">
+                        <img class="icon" src="asset/icon/download.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="documents-details-box">
+                    <p class="body1-regular">Salary Slip_June.pdf</p>
+                    <div>
+                        <img class="icon" src="asset/icon/eye.svg" alt="">
+                        <img class="icon" src="asset/icon/download.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- row 2 -->
+            <div class="documents-details-row">
+                <div class="documents-details-box">
+                    <p class="body1-regular">Salary Slip_May.pdf</p>
+                    <div>
+                        <img class="icon" src="asset/icon/eye.svg" alt="">
+                        <img class="icon" src="asset/icon/download.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="documents-details-box">
+                    <p class="body1-regular">Salary Slip_April.pdf</p>
+                    <div>
+                        <img class="icon" src="asset/icon/eye.svg" alt="">
+                        <img class="icon" src="asset/icon/download.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- row 3 -->
+            <div class="documents-details-row">
+                <div class="documents-details-box">
+                    <p class="body1-regular">Reliving Letter.pdf</p>
+                    <div>
+                        <img class="icon" src="asset/icon/eye.svg" alt="">
+                        <img class="icon" src="asset/icon/download.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="documents-details-box">
+                    <p class="body1-regular">Experience Letter.pdf</p>
+                    <div>
+                        <img class="icon" src="asset/icon/eye.svg" alt="">
+                        <img class="icon" src="asset/icon/download.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Account Access (NONE)-->
+        <div class="personal-info-details" id="account-access" style="display: none;">
+            <!-- row 1 -->
+            <div class="personal-info-details-row">
+                <div>
+                    <p class="body2-regular small-title">Email Address</p>
+                    <p class="body1-regular">brooklyn.s@example.com</p>
+                </div>
+
+                <div>
+                    <p class="body2-regular small-title">Slack ID</p>
+                    <p class="body1-regular">brooklyn_simmons</p>
+                </div>
+            </div>
+
+            <!-- row 2 -->
+            <div class="personal-info-details-row">
+                <div style="padding-bottom: 0px; border-bottom: none;">
+                    <p class="body2-regular small-title">Skype ID</p>
+                    <p class="body1-regular">brooklyn_simmons</p>
+                </div>
+
+                <div style="padding-bottom: 0px; border-bottom: none;">
+                    <p class="body2-regular small-title">Github ID</p>
+                    <p class="body1-regular">brooklyn_simmons</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Attendance Details -->
+    <div class="attendance-details" id="attendance-details" style="display: none;">
+        <div class="attendance-table">
+            <table class="body1-regular">
+                <thead>
+                    <tr>
+                        <th class="body1-regular">Date</th>
+                        <th class="body1-regular">Check In</th>
+                        <th class="body1-regular">Check Out</th>
+                        <th class="body1-regular">Break</th>
+                        <th class="body1-regular">Working Hours</th>
+                        <th class="body1-regular">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- r1 -->
+                    <tr>
+                        <td>July 01, 2023</td>
+                        <td>09:28 AM</td>
+                        <td>07:00 PM</td>
+                        <td>00:30 Min</td>
+                        <td>09:02 Hrs</td>
+                        <td>
+                            <div id="badge-ontime">
+                                <p class="caption-regular">On Time</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- r2 -->
+                    <tr>
+                        <td>July 02, 2023</td>
+                        <td>09:20 AM</td>
+                        <td>07:00 PM</td>
+                        <td>00:20 Min</td>
+                        <td>09:20 Hrs</td>
+                        <td>
+                            <div id="badge-ontime">
+                                <p class="caption-regular">On Time</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- r3 -->
+                    <tr>
+                        <td>July 03, 2023</td>
+                        <td>09:25 AM</td>
+                        <td>07:00 PM</td>
+                        <td>00:30 Min</td>
+                        <td>09:05 Hrs</td>
+                        <td>
+                            <div id="badge-ontime">
+                                <p class="caption-regular">On Time</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- r4 -->
+                    <tr>
+                        <td>July 04, 2023</td>
+                        <td>09:45 AM</td>
+                        <td>07:00 PM</td>
+                        <td>00:40 Min</td>
+                        <td>08:35 Hrs</td>
+                        <td>
+                            <div id="badge-late">
+                                <p class="caption-regular">Late</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- r5 -->
+                    <tr>
+                        <td>July 05, 2023</td>
+                        <td>10:00 AM</td>
+                        <td>07:00 PM</td>
+                        <td>00:30 Min</td>
+                        <td>08:30 Hrs</td>
+                        <td>
+                            <div id="badge-late">
+                                <p class="caption-regular">Late</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- r6 -->
+                    <tr>
+                        <td>July 06, 2023</td>
+                        <td>09:28 AM</td>
+                        <td>07:00 PM</td>
+                        <td>00:30 Min</td>
+                        <td>09:09 Hrs</td>
+                        <td>
+                            <div id="badge-ontime">
+                                <p class="caption-regular">On Time</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- r7 -->
+                    <tr>
+                        <td>July 07, 2023</td>
+                        <td>09:30 AM</td>
+                        <td>07:00 PM</td>
+                        <td>00:15 Min</td>
+                        <td>09:15 Hrs</td>
+                        <td>
+                            <div id="badge-ontime">
+                                <p class="caption-regular">On Time</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- r8 -->
+                    <tr>
+                        <td>July 08, 2023</td>
+                        <td>09:52 AM</td>
+                        <td>07:00 PM</td>
+                        <td>00:45 Min</td>
+                        <td>08:23 Hrs</td>
+                        <td>
+                            <div id="badge-late">
+                                <p class="caption-regular">Late</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- r9 -->
+                    <tr>
+                        <td>July 09, 2023</td>
+                        <td>09:10 AM</td>
+                        <td>07:00 PM</td>
+                        <td>00:30 Min</td>
+                        <td>08:30 Hrs</td>
+                        <td>
+                            <div id="badge-ontime">
+                                <p class="caption-regular">On Time</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- r10 -->
+                    <tr>
+                        <td style="border: none">July 10, 2023</td>
+                        <td style="border: none">09:48 AM</td>
+                        <td style="border: none">07:00 PM</td>
+                        <td style="border: none">00:42 Min</td>
+                        <td style="border: none">08:30 Hrs</td>
+                        <td style="border: none">
+                            <div id="badge-late">
+                                <p class="caption-regular">Late</p>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Projects Details -->
+    <div class="projects-details" id="documents-details" style="display: none;">
+        <div class="projects-table">
+            <table class="body1-regular">
+                <thead>
+                    <tr>
+                        <th class="body1-regular">Sr. No.</th>
+                        <th class="body1-regular">Project Name</th>
+                        <th class="body1-regular">Start Date</th>
+                        <th class="body1-regular">Finish Date</th>
+                        <th class="body1-regular">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- r1 -->
+                    <tr>
+                        <td>1</td>
+                        <td>Amongus - Discovery Phase</td>
+                        <td>Feb 01, 2023</td>
+                        <td>Mar 05, 2023</td>
+                        <td>
+                            <div id="badge-completed">
+                                <p class="caption-regular">Completed</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- r2 -->
+                    <tr>
+                        <td>2</td>
+                        <td>Wildcare - Development Project</td>
+                        <td>Feb 12, 2023</td>
+                        <td>April 20, 2023</td>
+                        <td>
+                            <div id="badge-completed">
+                                <p class="caption-regular">Completed</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- r3 -->
+                    <tr>
+                        <td>3</td>
+                        <td>Hingutsan Web Development</td>
+                        <td>April 05, 2023</td>
+                        <td>October 05, 2023</td>
+                        <td>
+                            <div id="badge-in_process">
+                                <p class="caption-regular">In Process</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- r4 -->
+                    <tr>
+                        <td style="border: none">4</td>
+                        <td style="border: none">Montilisy Ecommerce Platform</td>
+                        <td style="border: none">May 12, 2023</td>
+                        <td style="border: none">August 12, 2023</td>
+                        <td style="border: none">
+                            <div id="badge-in_process">
+                                <p class="caption-regular">In Process</p>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <!-- <div class="projects">
+
+            </div> -->
+    </div>
+
+    <!-- Leave Details -->
+    <div class="leave-details" id="leave-details" style="display: none;">
+        <div class="leave-table">
+            <table class="body1-regular">
+                <thead>
+                    <tr>
+                        <th class="body1-regular">Date</th>
+                        <th class="body1-regular">Duration</th>
+                        <th class="body1-regular">Days</th>
+                        <th class="body1-regular">Reporting Manager</th>
+                        <th class="body1-regular">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- r1 -->
+                    <tr>
+                        <td>July 01, 2023</td>
+                        <td>July 05 - July 08</td>
+                        <td>3 Days</td>
+                        <td>Mark Willians</td>
+                        <td>
+                            <div id="badge-pending">
+                                <p class="caption-regular">Pending</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- r2 -->
+                    <tr>
+                        <td>Apr 05, 2023</td>
+                        <td>Apr 06 - Apr 10</td>
+                        <td>4 Days</td>
+                        <td>Mark Willians</td>
+                        <td>
+                            <div id="badge-approved">
+                                <p class="caption-regular">Approved</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- r3 -->
+                    <tr>
+                        <td>Mar 12, 2023</td>
+                        <td>Mar 14 - Mar 16</td>
+                        <td>2 Days</td>
+                        <td>Mark Willians</td>
+                        <td>
+                            <div id="badge-approved">
+                                <p class="caption-regular">Approved</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- r4 -->
+                    <tr>
+                        <td>Feb 01, 2023</td>
+                        <td>Feb 02 - Feb 10</td>
+                        <td>8 Days</td>
+                        <td>Mark Willians</td>
+                        <td>
+                            <div id="badge-approved">
+                                <p class="caption-regular">Approved</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- r5 -->
+                     <tr>
+                        <td style="border: none">Jan 01, 2023</td>
+                        <td style="border: none">Jan 16 - Jan 19</td>
+                        <td style="border: none">3 Days</td>
+                        <td style="border: none">Mark Willians</td>
+                        <td style="border: none">
+                            <div id="badge-reject">
+                                <p class="caption-regular">Reject</p>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- <div class="leave">
+
+            </div> -->
+
+    </div>
+</div>
