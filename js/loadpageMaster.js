@@ -16,7 +16,7 @@ async function loadHTML(id, file) {
   }
 }
 //load main giao dien
-async function loadPage(file) {
+async function loadPageMaster(file) {
   const content = document.getElementById("content-hrms");
   if (!content) return;
 
@@ -43,7 +43,7 @@ async function loadPage(file) {
 loadHTML("siderbar", "./site/siderbar.html").then(() => {
   const sidebar = document.getElementById("siderbar");
   if (!sidebar) return;
-  loadPage("./05.html");
+  loadPageMaster("./05.html");
 });
 loadHTML("header", "./site/header.html");
 
@@ -96,7 +96,7 @@ function initSidebarEvents() {
     a.closest("li")?.classList.add("siderbar-active");
 
     const path = href.replace("/", "");
-    loadPage(`./${path}.html`);
+    loadPageMaster(`./${path}.html`);
   });
 }
 
@@ -119,8 +119,8 @@ function initDepartmentPage() {
       console.log(`👉 Click View All ở phòng ${index + 1}`);
 
       // Có thể truyền tham số vào URL nếu cần, ví dụ:
-      // loadPage(`./20.html?dept=${index+1}`);
-      loadPage("./alldepartments/20.html");
+      // loadPageMaster(`./20.html?dept=${index+1}`);
+      loadPageMaster("./alldepartments/20.html");
     });
   });
 }

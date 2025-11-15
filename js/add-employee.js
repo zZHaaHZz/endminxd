@@ -69,7 +69,7 @@ function initAddEmployeePage() {
     // --- Cancel → quay lại danh sách nhân viên
     btnCancel?.addEventListener("click", (e) => {
       e.preventDefault();
-      loadPage("./06.html");
+      loadPageMaster("./06.html");
     });
 
     // --- Next → sang bước kế tiếp
@@ -95,7 +95,7 @@ function initAddEmployeePage() {
       } else {
         // ✅ Chỉ hiển alert 1 lần rồi chuyển trang
         alert("✅ Đã hoàn tất thêm nhân viên!");
-        loadPage("./06.html");
+        loadPageMaster("./06.html");
       }
     });
   }

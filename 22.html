@@ -20,7 +20,6 @@
     .head-tbl-payroll{
         width: 1040px;
         height: 44px;
-        border: 1px solid black;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -47,7 +46,6 @@
     .pay-employee{
         width: 1040px;
         height: 44px;
-        border: 1px solid black;
         display: flex;
         align-items: center;
     }
@@ -75,6 +73,20 @@
     .pay-employee .pay-status{
         width: 100px;
     }
+    .pay-status-completed{
+        background-color: #3FC28A1A;
+        padding: 5px 10px;
+        border-radius: 10px;
+        color: #3FC28A;
+        font-size: 12px;
+    }
+    .pay-status-pending{
+        background-color: #EFBE121A ;
+        padding: 5px 10px;
+        border-radius: 10px;
+        color: #EFBE12;
+        font-size: 12px;
+    }
 </style>
 <div class="content-payroll">
     <div class="search search22">
@@ -91,15 +103,25 @@
             <p class="status-payroll">Status</p>
         </div>
         <div id="list-pay"></div>
-        <!-- <div class="pay-employee">
-            <div class="name-payroll">
-                <img src="/img/avatar.jpg" alt="">
-                <p class="name">Bui quang ha</p>
-            </div>
-            <p class="pay-ctc">$45000</p>
-            <p class="pay-thang">$4000</p>
-            <p class="pay-deduction">$450</p>
-            <p class="pay-status">Compieted</p>
-        </div> -->
     </div>
+            <div class="pagination">
+            <div class="left-pagination">
+                <p>Showing</p>
+                <div class="box-showing">
+                    <p>10</p>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+            </div>
+            <div class="center-pagination">Showing 1 to 10 out of 60 records</div>
+            <div class="right-pagination">
+                <div class="doi-trang"><i class="fa-solid fa-angle-left"></i></div>
+                <div class="so-trang">
+                    <div class="box-trang box-trang-active">1</div>
+                    <div class="box-trang">2</div>
+                    <div class="box-trang">3</div>
+                    <div class="box-trang">4</div>
+                </div>
+                <div class="doi-trang"><i class="fa-solid fa-angle-right"></i></div>
+            </div>
+        </div>
 </div>
