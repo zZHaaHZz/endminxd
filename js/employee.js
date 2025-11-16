@@ -52,15 +52,11 @@ function initEmployeePage() {
     loadPage("./add-employee/07.html");
   });
 
-  // === Nút xem chi tiết nhân viên (fa-eye) ===
-  const viewBtns = document.querySelectorAll(".view-employee");
-  viewBtns.forEach((btn) => {
-    btn.addEventListener("click", (e) => {
-      // const id = e.target.dataset.id; // có thể truyền id vào trang 12 nếu cần
-      // console.log("👁 Xem thông tin nhân viên ID:", id);
-      loadPage("./show-employee/12.html");
-      // alert("Chuc nang dang phat trien");
-      // loadPage("./06.html");
-    });
+const viewBtns = document.querySelectorAll(".view-employee");
+
+viewBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    localStorage.setItem("showDetailEmployee", "true");
   });
+});
 }

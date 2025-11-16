@@ -10,7 +10,7 @@ const pages = [
   "holidays.html",
   "settings.html"
 ];
-
+// const {loadPageMaster} = require("../loadpageMaster");
 
 const buttons = document.querySelectorAll(".menu .menu-button-off, .menu .menu-button-on");
 const titleMenuButtons = document.querySelectorAll(".menu .menu-button-off p, .menu .menu-button-on p");
@@ -80,12 +80,14 @@ async function loadPage(fileName, button) {
         updateBreadcrumb(["Good Morning"]);
         if (typeof window.initDashBoardPage === "function") {
           window.initDashBoardPage();
+         loadPageMaster("./05.html");
         }
         break;
       case "employees.html":
         updateBreadcrumb(["All Employees"]);
         if (typeof window.initEmployeePage === "function") {
           window.initEmployeePage();
+                loadPageMaster("./06.html");
         }
         break;
       case "departments.html":

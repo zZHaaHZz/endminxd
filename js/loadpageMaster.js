@@ -16,7 +16,7 @@ async function loadHTML(id, file) {
   }
 }
 //load main giao dien
-async function loadPage(file) {
+async function loadPageMaster(file) {
   const content = document.getElementById("content-hrms");
   if (!content) return;
 
@@ -43,7 +43,7 @@ async function loadPage(file) {
 loadHTML("siderbar", "./site/siderbar.html").then(() => {
   const sidebar = document.getElementById("siderbar");
   if (!sidebar) return;
-  loadPage("./05.html");
+  loadPageMaster("./05.html");
 });
 loadHTML("header", "./site/header.html");
 
@@ -57,13 +57,49 @@ function initSidebarEvents() {
     if (!a) return;
     e.preventDefault();
 
+    const href = a.getAttribute("href");
+
+    // --- Xử lý riêng cho /23 ---
+    if (href === "/23") {
+      alert("Chức năng đang phát triển");
+      sidebar.querySelectorAll("li").forEach(li => li.classList.remove("siderbar-active"));
+      a.closest("li")?.classList.add("siderbar-active");
+      return; // không load page
+    }
+    if (href === "/25") {
+      alert("Chức năng đang phát triển");
+      sidebar.querySelectorAll("li").forEach(li => li.classList.remove("siderbar-active"));
+      a.closest("li")?.classList.add("siderbar-active");
+      return; // không load page
+    }
+    if (href === "/30") {
+      alert("Chức năng đang phát triển");
+      sidebar.querySelectorAll("li").forEach(li => li.classList.remove("siderbar-active"));
+      a.closest("li")?.classList.add("siderbar-active");
+      return; // không load page
+    }
+    if (href === "/26") {
+      alert("Chức năng đang phát triển");
+      sidebar.querySelectorAll("li").forEach(li => li.classList.remove("siderbar-active"));
+      a.closest("li")?.classList.add("siderbar-active");
+      return; // không load page
+    }
+    if (href === "/28") {
+      alert("Chức năng đang phát triển");
+      sidebar.querySelectorAll("li").forEach(li => li.classList.remove("siderbar-active"));
+      a.closest("li")?.classList.add("siderbar-active");
+      return; // không load page
+    }
+
+    // Xử lý các link khác
     sidebar.querySelectorAll("li").forEach(li => li.classList.remove("siderbar-active"));
     a.closest("li")?.classList.add("siderbar-active");
 
-    const path = a.getAttribute("href").replace("/", "");
-    loadPage(`./${path}.html`);
+    const path = href.replace("/", "");
+    loadPageMaster(`./${path}.html`);
   });
 }
+
 
 function initDepartmentPage() {
   console.log("Page 19 loaded ✅");
@@ -83,16 +119,9 @@ function initDepartmentPage() {
       console.log(`👉 Click View All ở phòng ${index + 1}`);
 
       // Có thể truyền tham số vào URL nếu cần, ví dụ:
-      // loadPage(`./20.html?dept=${index+1}`);
-      loadPage("./alldepartments/20.html");
+      // loadPageMaster(`./20.html?dept=${index+1}`);
+      loadPageMaster("./alldepartments/20.html");
     });
   });
 }
-
-if(localStorage.getItem('router') === 'dashboard'){
-  window.location.href = '../05.html'
-}
-
-if(localStorage.getItem('router') === 'allEmployee'){
-  window.location.href = '../06.html'
-}
+// module.exports = { loadPageMaster };
