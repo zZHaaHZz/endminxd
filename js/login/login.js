@@ -206,6 +206,7 @@ btnLogin.addEventListener("click", () => {
     const password = inputPasswordLogin.value;
 
     if (isValidEmail(email) && password.length >= 6) {
+        localStorage.setItem("isLogin", "true"); 
         window.location.href = "index.html";
     }
 });
