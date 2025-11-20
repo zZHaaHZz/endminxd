@@ -20,7 +20,7 @@ async function loadPage(file) {
     const content = document.getElementById("content-hrms");
     if (!content) return;
     console.log(file)
-    if (file == "./23.html" || file == "./25.html" || file == "./26.html"  || file == "./28.html" || file == "./40.html" ) {
+    if (file == "./23.html" || file == "./25.html" || file == "./26.html" || file == "./28.html" || file == "./40.html") {
         alert("Chuc nang dang phat trien");
         window.location.href = "./index.html"
     }
@@ -72,6 +72,31 @@ loadHTML("siderbar", "./site/siderbar.html").then(() => {
             break;
         case '4':
             loadPage("payroll.html");
+            localStorage.removeItem('activeMenuIndex')
+            break;
+        case '5':
+            alert("chuc nang dang phat trien");
+            loadPage("dashboard.html");
+            localStorage.removeItem('activeMenuIndex')
+            break;
+        case '6':
+            alert("chuc nang dang phat trien");
+            loadPage("dashboard.html");
+            localStorage.removeItem('activeMenuIndex')
+            break;
+        case '7':
+            alert("chuc nang dang phat trien");
+            loadPage("dashboard.html");
+            localStorage.removeItem('activeMenuIndex')
+            break;
+        case '8':
+            alert("chuc nang dang phat trien");
+            loadPage("dashboard.html");
+            localStorage.removeItem('activeMenuIndex')
+            break;
+        case '9':
+            alert("chuc nang dang phat trien");
+            loadPage("dashboard.html");
             localStorage.removeItem('activeMenuIndex')
             break;
         default:
