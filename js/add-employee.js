@@ -67,7 +67,7 @@ function initAddEmployeePage() {
 
     btnCancel?.addEventListener("click", (e) => {
       e.preventDefault();
-      loadPageMaster("./06.html");
+      loadPage("./06.html");
     });
 
     btnNext?.addEventListener("click", async (e) => {
@@ -85,7 +85,7 @@ function initAddEmployeePage() {
         );
 
         const nextFile = files[activeIndex + 1];
-        const res = await fetch(nextFile);
+        const res = await fetch(nextFile);  
         const html = await res.text();
         content.innerHTML = html;
         attachButtonEvents();

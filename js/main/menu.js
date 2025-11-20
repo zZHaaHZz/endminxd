@@ -159,12 +159,7 @@ buttons.forEach((btn, index) => {
   btn.addEventListener("click", () => {
     localStorage.setItem("activeMenuIndex", String(index));
     loadPage(pages[index], btn);
-
-<<<<<<< HEAD
-    window.location.href = '../index.html'
-=======
-    window.location.href = 'index.html'
->>>>>>> nguyenha
+    window.location.href = './index.html'
   });
 });
 
