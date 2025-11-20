@@ -75,22 +75,42 @@ loadHTML("siderbar", "./site/siderbar.html").then(() => {
             localStorage.removeItem('activeMenuIndex')
             break;
         case '5':
+<<<<<<< HEAD
+=======
+            alert("chuc nang dang phat trien");
+>>>>>>> nguyenha
             loadPage("dashboard.html");
             localStorage.removeItem('activeMenuIndex')
             break;
         case '6':
+<<<<<<< HEAD
+=======
+            alert("chuc nang dang phat trien");
+>>>>>>> nguyenha
             loadPage("dashboard.html");
             localStorage.removeItem('activeMenuIndex')
             break;
         case '7':
+<<<<<<< HEAD
+=======
+            alert("chuc nang dang phat trien");
+>>>>>>> nguyenha
             loadPage("dashboard.html");
             localStorage.removeItem('activeMenuIndex')
             break;
         case '8':
+<<<<<<< HEAD
+=======
+            alert("chuc nang dang phat trien");
+>>>>>>> nguyenha
             loadPage("dashboard.html");
             localStorage.removeItem('activeMenuIndex')
             break;
         case '9':
+<<<<<<< HEAD
+=======
+            alert("chuc nang dang phat trien");
+>>>>>>> nguyenha
             loadPage("dashboard.html");
             localStorage.removeItem('activeMenuIndex')
             break;
