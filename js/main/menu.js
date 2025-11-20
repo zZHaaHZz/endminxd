@@ -160,7 +160,7 @@ buttons.forEach((btn, index) => {
     localStorage.setItem("activeMenuIndex", String(index));
     loadPage(pages[index], btn);
 
-    window.location.href = 'index.html'
+    window.location.href = './index.html'
   });
 });
 
