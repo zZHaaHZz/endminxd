@@ -74,6 +74,26 @@ loadHTML("siderbar", "./site/siderbar.html").then(() => {
             loadPage("payroll.html");
             localStorage.removeItem('activeMenuIndex')
             break;
+                case '5':
+            loadPage("dashboard.html");
+            localStorage.removeItem('activeMenuIndex')
+            break;
+                    case '6':
+            loadPage("dashboard.html");
+            localStorage.removeItem('activeMenuIndex')
+            break;
+                    case '7':
+            loadPage("dashboard.html");
+            localStorage.removeItem('activeMenuIndex')
+            break;
+                    case '8':
+            loadPage("dashboard.html");
+            localStorage.removeItem('activeMenuIndex')
+            break;
+                    case '9':
+            loadPage("dashboard.html");
+            localStorage.removeItem('activeMenuIndex')
+            break;
         default:
             break;
     }
