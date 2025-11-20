@@ -78,7 +78,6 @@ async function loadPage(fileName, button) {
         updateMainTitle('Hello Robert 👋🏻'); // Có thể thay tên khác
         updateBreadcrumb(["Good Morning"]);
         if (typeof window.initDashBoardPage === "function") {
-          loadPageMaster("./05.html");
           window.initDashBoardPage();
         }
         break;
@@ -161,7 +160,7 @@ buttons.forEach((btn, index) => {
     localStorage.setItem("activeMenuIndex", String(index));
     loadPage(pages[index], btn);
 
-    window.location.href = '../../index.html'
+    window.location.href = '../index.html'
   });
 });
 
