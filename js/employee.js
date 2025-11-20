@@ -49,14 +49,15 @@ function initEmployeePage() {
   const addBtn = document.querySelector(".btn-add-emloyee");
   addBtn?.addEventListener("click", (e) => {
     e.preventDefault();
-    loadPage("./add-employee/07.html");
+    loadPage("./add-employee/add_employee_07.html");
   });
 
-const viewBtns = document.querySelectorAll(".view-employee");
-
-viewBtns.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    localStorage.setItem("showDetailEmployee", "true");
+  // === Nút xem chi tiết nhân viên (fa-eye) ===
+  const viewBtns = document.querySelectorAll(".view-employee");
+  viewBtns.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      localStorage.setItem("activeMenuIndex", '1')
+      window.location.href = "./2_Mainboard.html";
+    });
   });
-});
 }

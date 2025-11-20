@@ -20,7 +20,6 @@
     .head-tbl-payroll{
         width: 1040px;
         height: 44px;
-        border: 1px solid black;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -47,7 +46,6 @@
     .pay-employee{
         width: 1040px;
         height: 44px;
-        border: 1px solid black;
         display: flex;
         align-items: center;
     }
@@ -75,6 +73,21 @@
     .pay-employee .pay-status{
         width: 100px;
     }
+    .tbl-payroll{
+        width: 100%;
+        height: 692px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 10px
+    }
+    .list-pay{
+        height: 648px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 10px;
+    }
 </style>
 <div class="content-payroll">
     <div class="search search22">
@@ -91,15 +104,5 @@
             <p class="status-payroll">Status</p>
         </div>
         <div id="list-pay"></div>
-        <!-- <div class="pay-employee">
-            <div class="name-payroll">
-                <img src="/img/avatar.jpg" alt="">
-                <p class="name">Bui quang ha</p>
-            </div>
-            <p class="pay-ctc">$45000</p>
-            <p class="pay-thang">$4000</p>
-            <p class="pay-deduction">$450</p>
-            <p class="pay-status">Compieted</p>
-        </div> -->
     </div>
 </div>

@@ -10,7 +10,6 @@ const pages = [
   "holidays.html",
   "settings.html"
 ];
-// const {loadPageMaster} = require("../loadpageMaster");
 
 const buttons = document.querySelectorAll(".menu .menu-button-off, .menu .menu-button-on");
 const titleMenuButtons = document.querySelectorAll(".menu .menu-button-off p, .menu .menu-button-on p");
@@ -79,15 +78,14 @@ async function loadPage(fileName, button) {
         updateMainTitle('Hello Robert 👋🏻'); // Có thể thay tên khác
         updateBreadcrumb(["Good Morning"]);
         if (typeof window.initDashBoardPage === "function") {
+          loadPageMaster("./05.html");
           window.initDashBoardPage();
-         loadPageMaster("./05.html");
         }
         break;
       case "employees.html":
         updateBreadcrumb(["All Employees"]);
         if (typeof window.initEmployeePage === "function") {
           window.initEmployeePage();
-                loadPageMaster("./06.html");
         }
         break;
       case "departments.html":
@@ -163,7 +161,6 @@ buttons.forEach((btn, index) => {
     localStorage.setItem("activeMenuIndex", String(index));
     loadPage(pages[index], btn);
 
-    localStorage.setItem('router','allEmployee')
     window.location.href = '../../index.html'
   });
 });

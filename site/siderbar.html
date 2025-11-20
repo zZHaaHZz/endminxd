@@ -6,11 +6,11 @@
 
   <div class="main-siderbar">
     <ul class="menu">
-      <li><a href="/05"><i class="fa-solid fa-grip"></i>Dashboard</a></li>
-      <li><a href="/06"><i class="fa-solid fa-users"></i>All Employees</a></li>
-      <li><a href="/19"><i class="fa-solid fa-rotate"></i>All Departments</a></li>
-      <li><a href="/21"><i class="fa-regular fa-calendar"></i>Attendance</a></li>
-      <li><a href="/22"><i class="fa-solid fa-comments-dollar"></i>Payroll</a></li>
+      <li><a href="/dashboard"><i class="fa-solid fa-grip"></i>Dashboard</a></li>
+      <li><a href="/employees"><i class="fa-solid fa-users"></i>All Employees</a></li>
+      <li><a href="/departments"><i class="fa-solid fa-rotate"></i>All Departments</a></li>
+      <li><a href="/attendance"><i class="fa-regular fa-calendar"></i>Attendance</a></li>
+      <li><a href="/payroll"><i class="fa-solid fa-comments-dollar"></i>Payroll</a></li>
       <li><a href="/23"><i class="fa-solid fa-briefcase"></i>Jobs</a></li>
       <li><a href="/25"><i class="fa-solid fa-users"></i>Candidates</a></li>
       <li><a href="/"><i class="fa-solid fa-book-atlas"></i>Leaves</a></li>
@@ -21,41 +21,41 @@
 </div>
 
 <div class="mode">
-  <button class="btn-light"><i class="fa-solid fa-sun"></i><p>Light</p></button>
-  <button class="btn-dark"><i class="fa-solid fa-moon"></i><p>Dark</p></button>
+  <button class="btn-light"><i class="fa-solid fa-sun"></i>
+    <p>Light</p>
+  </button>
+  <button class="btn-dark"><i class="fa-solid fa-moon"></i>
+    <p>Dark</p>
+  </button>
 </div>
 
 <script>
-document.addEventListener('DOMContentLoaded', () => {
-  const menu = document.querySelector('.menu');
-  if (!menu) return;
+  document.addEventListener('DOMContentLoaded', () => {
+    const menu = document.querySelector('.menu');
+    if (!menu) return;
+    menu.addEventListener('click', (e) => {
+      const li = e.target.closest('li');
+      const link = li?.querySelector('a');
+      if (li && link) {
+        e.preventDefault();
 
-  // --- 1. Lắng nghe click để chuyển trang ---
-  menu.addEventListener('click', (e) => {
-    const li = e.target.closest('li');
-    const link = li?.querySelector('a');
+        localStorage.setItem('activeLink', link.getAttribute('href'));
 
-    if (li && link) {
-      e.preventDefault(); // Ngăn chuyển trang tức thì
-      // Lưu lại href để sau trang mới biết cái nào active
-      localStorage.setItem('activeLink', link.getAttribute('href'));
-      // Chuyển trang
-      window.location.href = link.getAttribute('href');
-    }
-  });
-
-  // --- 2. Khi load trang, đánh dấu active đúng mục ---
-  const current = localStorage.getItem('activeLink');
-  if (current) {
-    menu.querySelectorAll('li').forEach(li => {
-      const a = li.querySelector('a');
-      if (a && a.getAttribute('href') === current) {
-        li.classList.add('siderbar-active');
-      } else {
-        li.classList.remove('siderbar-active');
+        window.location.href = link.getAttribute('href');
       }
     });
-  }
-});
+
+    const current = localStorage.getItem('activeLink');
+    if (current) {
+      menu.querySelectorAll('li').forEach(li => {
+        const a = li.querySelector('a');
+        if (a && a.getAttribute('href') === current) {
+          li.classList.add('siderbar-active');
+        } else {
+          li.classList.remove('siderbar-active');
+        }
+      });
+    }
+  });
 
 </script>
