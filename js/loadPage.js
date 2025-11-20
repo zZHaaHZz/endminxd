@@ -49,7 +49,13 @@ if (idx === null) {
     localStorage.setItem('activeMenuIndex', '0');
     idx = '0';
 }
+// mặc định false nếu chưa login
+let isLogin = localStorage.getItem("isLogin") === "true";
 
+if (!isLogin) {
+
+    window.location.href = "1_Login.html";
+} 
 loadHTML("siderbar", "./site/siderbar.html").then(() => {
     const sidebar = document.getElementById("siderbar");
     if (!sidebar) return;
