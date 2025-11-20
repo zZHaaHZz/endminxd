@@ -20,7 +20,7 @@ async function loadPage(file) {
     const content = document.getElementById("content-hrms");
     if (!content) return;
     console.log(file)
-    if (file == "./23.html" || file == "./25.html" || file == "./26.html"  || file == "./28.html" || file == "./40.html" ) {
+    if (file == "./23.html" || file == "./25.html" || file == "./26.html" || file == "./28.html" || file == "./40.html") {
         alert("Chuc nang dang phat trien");
         window.location.href = "./index.html"
     }
@@ -74,23 +74,23 @@ loadHTML("siderbar", "./site/siderbar.html").then(() => {
             loadPage("payroll.html");
             localStorage.removeItem('activeMenuIndex')
             break;
-                case '5':
+        case '5':
             loadPage("dashboard.html");
             localStorage.removeItem('activeMenuIndex')
             break;
-                    case '6':
+        case '6':
             loadPage("dashboard.html");
             localStorage.removeItem('activeMenuIndex')
             break;
-                    case '7':
+        case '7':
             loadPage("dashboard.html");
             localStorage.removeItem('activeMenuIndex')
             break;
-                    case '8':
+        case '8':
             loadPage("dashboard.html");
             localStorage.removeItem('activeMenuIndex')
             break;
-                    case '9':
+        case '9':
             loadPage("dashboard.html");
             localStorage.removeItem('activeMenuIndex')
             break;

@@ -206,6 +206,6 @@ btnLogin.addEventListener("click", () => {
     const password = inputPasswordLogin.value;
 
     if (isValidEmail(email) && password.length >= 6) {
-        window.location.href = "2_Mainboard.html";
+        window.location.href = "index.html";
     }
 });
