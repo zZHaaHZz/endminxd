@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+:root {
+    /* Font families */
+    --font-sans: "Lexend", sans-serif;
+
+    /* Weights */
+    --w-regular: 300;
+    --w-bold: 600;
+
+    /* Heading sizes */
+    --h1-size: 80px;
+    --h2-size: 60px;
+    --h3-size: 40px;
+    --h4-size: 30px;
+    --h5-size: 24px;
+    --h6-size: 20px;
+    --h7-size: 18px;
+
+    /* Body & small text */
+    --body1-size: 16px;
+    --body2-size: 14px;
+    --caption-size: 12px;
+    --label-size: 11px;
+
+    /* Màu chữ mặc định */
+    --text-color: var(--dark-500);
+}
+
+/* ================
+   Utilities / Base
+================ */
+.typo-base {
+    font-family: var(--font-sans);
+    color: var(--text-color);
+}
+
+/* ================
+   Headings (đậm)
+================ */
+.h1 {
+    font-size: var(--h1-size);
+    line-height: 100%;
+    font-weight: var(--w-bold);
+    font-family: var(--font-sans);
+}
+
+.h2 {
+    font-size: var(--h2-size);
+    line-height: 100%;
+    font-weight: var(--w-bold);
+    font-family: var(--font-sans);
+}
+
+.h3 {
+    font-size: var(--h3-size);
+    line-height: 100%;
+    font-weight: var(--w-bold);
+    font-family: var(--font-sans);
+}
+
+.h4 {
+    font-size: var(--h4-size);
+    line-height: 40px;
+    font-weight: var(--w-bold);
+    font-family: var(--font-sans);
+}
+
+.h5 {
+    font-size: var(--h5-size);
+    line-height: 36px;
+    font-weight: var(--w-bold);
+    font-family: var(--font-sans);
+}
+
+.h6 {
+    font-size: var(--h6-size);
+    line-height: 30px;
+    font-weight: var(--w-bold);
+    font-family: var(--font-sans);
+}
+
+.h7 {
+    font-size: var(--h7-size);
+    line-height: 26px;
+    font-weight: var(--w-bold);
+    font-family: var(--font-sans);
+}
+
+/* ================
+   Headings (regular) 
+================ */
+.h1-regular {
+    font-size: var(--h1-size);
+    line-height: 100%;
+    font-weight: var(--w-regular);
+    font-family: var(--font-sans);
+}
+
+.h2-regular {
+    font-size: var(--h2-size);
+    line-height: 100%;
+    font-weight: var(--w-regular);
+    font-family: var(--font-sans);
+}
+
+.h3-regular {
+    font-size: var(--h3-size);
+    line-height: 100%;
+    font-weight: var(--w-regular);
+    font-family: var(--font-sans);
+}
+
+.h4-regular {
+    font-size: var(--h4-size);
+    line-height: 40px;
+    font-weight: var(--w-regular);
+    font-family: var(--font-sans);
+}
+
+.h5-regular {
+    font-size: var(--h5-size);
+    line-height: 36px;
+    font-weight: var(--w-regular);
+    font-family: var(--font-sans);
+}
+
+.h6-regular {
+    font-size: var(--h6-size);
+    line-height: 30px;
+    font-weight: var(--w-regular);
+    font-family: var(--font-sans);
+}
+
+.h7-regular {
+    font-size: var(--h7-size);
+    line-height: 26px;
+    font-weight: var(--w-regular);
+    font-family: var(--font-sans);
+}
+
+/* ================
+   Body / Caption / Label (bold)
+================ */
+.body1 {
+    font-size: var(--body1-size);
+    line-height: 24px;
+    font-weight: var(--w-bold);
+    font-family: var(--font-sans);
+}
+
+.body2 {
+    font-size: var(--body2-size);
+    line-height: 22px;
+    font-weight: var(--w-bold);
+    font-family: var(--font-sans);
+}
+
+.caption {
+    font-size: var(--caption-size);
+    line-height: 18px;
+    font-weight: var(--w-bold);
+    font-family: var(--font-sans);
+}
+
+.label {
+    font-size: var(--label-size);
+    line-height: 1.2;
+    font-weight: 16px;
+    letter-spacing: 0%;
+    font-family: var(--font-sans);
+}
+
+
+/* ================
+   Body / Caption / Label (regular)
+================ */
+.body1-regular {
+    font-size: var(--body1-size);
+    line-height: 24px;
+    font-weight: var(--w-regular);
+    font-family: var(--font-sans);
+}
+
+.body2-regular {
+    font-size: var(--body2-size);
+    line-height: 22px;
+    font-weight: var(--w-regular);
+    font-family: var(--font-sans);
+}
+
+.caption-regular {
+    font-size: var(--caption-size);
+    line-height: 18px;
+    font-weight: var(--w-regular);
+    font-family: var(--font-sans);
+}
+
+.label-regular {
+    font-size: var(--label-size);
+    line-height: 1.2;
+    font-weight: 16px;
+    letter-spacing: 0%;
+    font-family: var(--font-sans);
+}

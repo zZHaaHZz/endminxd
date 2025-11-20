@@ -15,10 +15,10 @@ function initAddEmployeePage() {
   }
 
   const files = [
-    "./add-employee/07.html",
-    "./add-employee/08.html",
-    "./add-employee/09.html",
-    "./add-employee/10.html"
+    "./add-employee/add_employee_07.html",
+    "./add-employee/add_employee_08.html",
+    "./add-employee/add_employee_09.html",
+    "./add-employee/add_employee_10.html"
   ];
 
   tabs.forEach((tab, index) => {
@@ -49,12 +49,11 @@ function initAddEmployeePage() {
   });
 
 
-  // xy ly cancel next
   function attachButtonEvents() {
     let btnNext = document.getElementById("next-employee");
     let btnCancel = document.getElementById("cancel-employee");
 
-    // Clone để xóa event cũ
+
     if (btnNext) {
       const newBtnNext = btnNext.cloneNode(true);
       btnNext.parentNode.replaceChild(newBtnNext, btnNext);
@@ -66,13 +65,11 @@ function initAddEmployeePage() {
       btnCancel = newBtnCancel;
     }
 
-    // --- Cancel → quay lại danh sách nhân viên
     btnCancel?.addEventListener("click", (e) => {
       e.preventDefault();
       loadPageMaster("./06.html");
     });
 
-    // --- Next → sang bước kế tiếp
     btnNext?.addEventListener("click", async (e) => {
       e.preventDefault();
       const activeIndex = [...tabs].findIndex((t) =>
@@ -93,9 +90,8 @@ function initAddEmployeePage() {
         content.innerHTML = html;
         attachButtonEvents();
       } else {
-        // ✅ Chỉ hiển alert 1 lần rồi chuyển trang
         alert("✅ Đã hoàn tất thêm nhân viên!");
-        loadPageMaster("./06.html");
+        loadPage("./employees.html");
       }
     });
   }

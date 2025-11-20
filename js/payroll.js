@@ -1,4 +1,4 @@
-function addpayroll() {
+function addPayroll() {
     const getpay = document.getElementById("list-pay");
     if (getpay) {
         const employees = [

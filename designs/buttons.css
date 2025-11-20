@@ -1,0 +1,26 @@
+:root {
+    --btn-bg: var(--primary-500);
+    --btn-bg-hover: var(--primary-600);
+    --btn-fg: var(--white-500);
+}
+
+.btn-giant {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 56px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--btn-bg);
+    color: var(--btn-fg);
+    border: none;
+    white-space: nowrap;
+    width: auto;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.btn-giant:hover {
+    background: var(--btn-bg-hover);
+}

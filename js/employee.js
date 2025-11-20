@@ -1,6 +1,6 @@
 function initEmployeePage() {
   console.log("Employee page loaded ✅");
-
+  
   const tbody = document.getElementById("employee-body");
   if (tbody) {
     tbody.innerHTML = "";
@@ -49,18 +49,16 @@ function initEmployeePage() {
   const addBtn = document.querySelector(".btn-add-emloyee");
   addBtn?.addEventListener("click", (e) => {
     e.preventDefault();
-    loadPageMaster("./add-employee/07.html");
+    loadPage("./add-employee/add_employee_07.html");
+
   });
 
   // === Nút xem chi tiết nhân viên (fa-eye) ===
   const viewBtns = document.querySelectorAll(".view-employee");
   viewBtns.forEach((btn) => {
     btn.addEventListener("click", (e) => {
-      // const id = e.target.dataset.id; // có thể truyền id vào trang 12 nếu cần
-      // console.log("👁 Xem thông tin nhân viên ID:", id);
-      // loadPageMaster("./show-employee/12.html");
-      // alert("Chuc nang dang phat trien");
-      // loadPageMaster("./06.html");
+      localStorage.setItem("activeMenuIndex", '1')
+      window.location.href = "./2_Mainboard.html";
     });
   });
 }
