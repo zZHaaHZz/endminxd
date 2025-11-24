@@ -67,7 +67,7 @@ function initAddEmployeePage() {
 
     btnCancel?.addEventListener("click", (e) => {
       e.preventDefault();
-      loadPage("./06.html");
+      loadPage("./employees.html");
     });
 
     btnNext?.addEventListener("click", async (e) => {
