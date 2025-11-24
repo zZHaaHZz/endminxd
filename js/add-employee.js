@@ -90,7 +90,7 @@ function initAddEmployeePage() {
         content.innerHTML = html;
         attachButtonEvents();
       } else {
-        alert("✅ Đã hoàn tất thêm nhân viên!");
+        alert("Them nhan vien thanh cong");
         loadPage("./employees.html");
       }
     });

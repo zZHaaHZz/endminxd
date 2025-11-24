@@ -78,3 +78,39 @@
 <script src="js/payroll.js"></script>
 
 </html>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const data = [
+        { name: "Bui Quang Ha", des: "Team Lead - Design", type: "Office", time: "09:27 AM", status: "Ontime" },
+        { name: "Bui Quang Ha", des: "Team Lead - Design", type: "Office", time: "10:49 AM", status: "Late" },
+        { name: "Leasie Watson", des: "Team Lead - Design", type: "Office", time: "09:27 AM", status: "Ontime" },
+        { name: "Leasie Watson", des: "Team Lead - Design", type: "Office", time: "10:49 AM", status: "Late" }
+    ];
+
+    const tbody = document.getElementById("attendanceList"); // chắc chắn tồn tại
+
+    data.forEach(item => {
+        const tr = document.createElement("tr");
+        tr.classList.add("td-body");
+
+        const statusClass = item.status === "Ontime" ? "box-td-stt-green" : "box-td-stt-red";
+
+        tr.innerHTML = `
+            <td class="td-tbl-db td-name">
+                <img src="img/avatar.jpg" style="width:36px;height:36px;border-radius:50%;">
+                ${item.name}
+            </td>
+            <td class="td-tbl-db td-des">${item.des}</td>
+            <td class="td-tbl-db td-type">${item.type}</td>
+            <td class="td-tbl-db td-time">${item.time}</td>
+            <td class="td-tbl-db td-status">
+                <div class="${statusClass}">${item.status}</div>
+            </td>
+        `;
+
+        tbody.appendChild(tr);
+    });
+});
+
+</script>
